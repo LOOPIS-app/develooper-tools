@@ -271,8 +271,8 @@ ensure_wp_config_block() {
 				cat >> "$tmp_file" <<'EOF'
 # LOOPIS SETUP
 define('WP_MEMORY_LIMIT', '512M');
-define('WP_LIVE', false);
-define('WP_TEST', true);
+define('LOOPIS_LIVE', false);
+define('LOOPIS_TEST', true);
 # END LOOPIS SETUP
 EOF
 				printf '%s\n' "" >> "$tmp_file"
@@ -286,8 +286,8 @@ EOF
 		cat >> "$tmp_file" <<'EOF'
 # LOOPIS SETUP
 define('WP_MEMORY_LIMIT', '512M');
-define('WP_LIVE', false);
-define('WP_TEST', true);
+define('LOOPIS_LIVE', false);
+define('LOOPIS_TEST', true);
 # END LOOPIS SETUP
 EOF
 		printf '%s\n' "" >> "$tmp_file"
