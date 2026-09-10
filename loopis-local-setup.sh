@@ -2,14 +2,18 @@
 #
 # LOOPIS Local Setup Script (LLSS)
 #
-# Script for quicker setup of your LOOPIS workspace.
+# A script to simplify local LOOPIS setup for development.
 #
 # This script will:
-# 1. Create symlinks for the LOOPIS components in your local WP install.
-# 2. Configure wp-config.php with LOOPIS debug/test settings.
+# - Create symlinks for the LOOPIS components in your local WP install.
+# - Configure wp-config.php with LOOPIS debug/test settings.
+#
+# How to use:
+# 1. Run this script from the develooper-tools folder.
+# 2. Follow the instructions to ensure your LOOPIS workspace is set up as described.
 #
 # Version: 0.01
-# Author: CoPilot (prompted by joxyzan)
+# Author: CoPilot (prompted by Johan Hagvil)
 #
 
 set -euo pipefail
@@ -79,9 +83,10 @@ print_header() {
    | LOOPIS LOCAL SETUP SCRIPT |
    –––––––––––––––––––––––––––––
 
-This script will:
-1. Create symlinks for the LOOPIS components in your local WP install.
-2. Configure wp-config.php with LOOPIS debug/test settings.
+Instructions:
+1. Create a local WP installation: https://github.com/LOOPIS-app/.github/blob/main/resources/local-setup.md
+2. Ensure your directory is structured as above.
+3. Start the setup.
 
 Expected directory structure:
   /your-loopis-workspace/
@@ -97,10 +102,6 @@ Expected directory structure:
   ├── loopis-users/
   └── mu-plugins/
 
-How to use:
-1. Create a local WP installation: https://github.com/LOOPIS-app/.github/blob/main/resources/local-setup.md
-2. Ensure your directory is structured as above.
-3. Run the script and follow the instructions.
 EOF
 	echo
 }
